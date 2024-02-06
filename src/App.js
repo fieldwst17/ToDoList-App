@@ -1,9 +1,8 @@
 import "./App.css";
-import Header from "../../my-new-app/src/components/Header";
-import Item from "../../my-new-app/src/components/Item";
-import AddForm from "../../my-new-app/src/components/AddForm";
 import { useState, useEffect } from "react";
-
+import Header from "./components/Header";
+import Item from "./components/Item";
+import AddForm from "./components/AddForm";
 function App() {
   const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) || []);
   const [title, setTitle] = useState("");
